@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)  // while declaring a fucntion in a variable always call the function after initialization
 const addTwo = function(num){
     return num + 2
 }
