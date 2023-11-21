@@ -33,14 +33,21 @@
 const secondLang = document.querySelector('li:nth-child(2)')
 // secondLang.innerHTML = 'Mojo'
 const newLi = document.createElement('li')
-newLi.appendChild(document.createTextNode('Swift'))
+newLi.appendChild(document.createTextNode('Mojo'))
+console.log(newLi);
 //document.querySelector('.language').replaceChild(secondLang, li)
-secondLang.replaceWith(newLi)
-//document.querySelector('.language').replaceChild(secondLang, newLi)
+//secondLang.replaceWith(newLi)
+const ul = document.querySelector('.language')
+ul.replaceChild(newLi, secondLang)
  
 //Edit
 const firstLang = document.querySelector('li:first-child')
 firstLang.outerHTML = '<li> TypeScript </li>'
+
+//Delete/Remove
+ const lastLang = document.querySelector('li:last-child')
+ lastLang.remove()
+ 
 
 </script>
 
