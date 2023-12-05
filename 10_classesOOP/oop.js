@@ -29,3 +29,5 @@ console.log(userOne);
 console.log(userTwo);
 console.log(userTwo.greetings());
 console.log(userOne.constructor);
+
+console.log(typeof user);
