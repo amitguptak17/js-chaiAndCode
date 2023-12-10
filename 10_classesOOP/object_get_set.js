@@ -1,4 +1,4 @@
-// not important
+// not important    
 
 const user = {
     _email : 'amit@i.com',
@@ -12,4 +12,6 @@ const user = {
         this._email = value
     }
 }
-console.log(user._email)
+
+const amit = Object.create(user)
+console.log(amit.email);
